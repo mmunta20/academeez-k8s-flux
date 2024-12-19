@@ -3,10 +3,14 @@ kind: Kustomization
 resources:
 - gotk-components.yaml
 - gotk-sync.yaml
-patches:
- - target:
-      group: kustomize.toolkit.fluxcd.io
-      version: v1
-      kind: Kustomization
-      name: flux-system
-   path: patch.yaml
+ patches:
+    - patch: |-
+        apiVersion: v1
+        kind: ServiceAccount
+        metadata:
+          name: source-controller
+          namespace: flux-system
+       target:
+        kind: ServiceAccount
+         annotations:
+            iam.gke.io/gcp-service-account: source-controller@prj-academeez.iam.gserviceaccount.com 
