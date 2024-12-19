@@ -4,4 +4,9 @@ resources:
 - gotk-components.yaml
 - gotk-sync.yaml
 patches:
-- path: namespaces.yaml
+  - target:
+      kind: Namespace
+    patch: |
+      apiVersion: v1
+      kind: Namespace
+      Name: live
