@@ -4,4 +4,4 @@ resources:
 - gotk-components.yaml
 - gotk-sync.yaml
 patches:
-- patch: patch.yaml
+- path: patch.yaml
