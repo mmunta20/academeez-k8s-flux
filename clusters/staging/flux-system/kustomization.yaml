@@ -5,6 +5,3 @@ resources:
 - gotk-sync.yaml
 patches:
 - path: namespaces.yaml
-  target:
-    kind: Namespace
-
