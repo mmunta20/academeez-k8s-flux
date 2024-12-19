@@ -6,5 +6,5 @@ resources:
 patches:
 - path: namespaces.yaml
   target:
-  kind: Namespace
+    kind: Namespace
 
