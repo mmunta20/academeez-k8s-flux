@@ -9,4 +9,4 @@ patches:
     name: source-controller
     namespace: flux-system
     version: v1
-   path: patch.yaml
+  path: patch.yaml
