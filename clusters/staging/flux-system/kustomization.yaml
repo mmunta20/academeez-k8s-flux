@@ -4,10 +4,4 @@ resources:
 - gotk-components.yaml
 - gotk-sync.yaml
 patches:
- - path: patch.yaml
-   target:
-     kind: ServiceAccount
-     name: source-controller
-     namespace: flux-system
-     version: v1
-  
+- path: patch.yaml
