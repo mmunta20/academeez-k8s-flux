@@ -13,4 +13,4 @@ patches:
         name: source-controller
         namespace: flux-system
         annotations:
-            iam.gke.io/gcp-service-account: source-controller@prj-academeez.iam.gserviceaccount.com
+            iam.gke.io/gcp-service-account: source-controller@prj-academeez.iam.gserviceaccounts.com
