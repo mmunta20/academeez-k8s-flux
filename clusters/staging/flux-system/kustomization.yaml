@@ -9,4 +9,5 @@ patches:
     patch: |
       apiVersion: v1
       kind: Namespace
-      Name: live
+      metadata:
+        name: live
