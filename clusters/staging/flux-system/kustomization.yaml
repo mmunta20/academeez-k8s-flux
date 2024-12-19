@@ -4,14 +4,9 @@ resources:
 - gotk-components.yaml
 - gotk-sync.yaml
 patches:
-   - patch: |-
-      apiVersion: v1
-      kind: ServiceAccount
-      metadata:
+- target:
+       kind: ServiceAccount
        name: source-controller
        namespace: flux-system
-       annotations:
-         iam.gke.io/gcp-service-account: source-controller@prj-academeez.iam.gserviceaccount.com
-
-     target:
-       kind: ServiceAccount
+       version: v1
+   patch: patch.yaml
